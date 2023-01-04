@@ -1,0 +1,33 @@
+## Purpose
+
+The purpose of this application is to help people know and compare farm information in different states. People can use the interactive map on this application to do comparison on farms choosing one or multiple categories, including: farm type, farm economic class, farm operator age, and farm production specialty.
+
+## How to Use
+
+- **Statistics in map**
+  1.  Select State 1 and State 2 on the interactive map to start comparison. State 1 will be green dot, and State 2 will be red dot. Available states in the map are marked in this tab. When choosing a state, only click on state Showing "Remainder of xxx state", for example, "Remainder of Illinois".
+  2.  Choose "Year" and "Category"  using slide bars, you can choose more than one categories in "Category".
+  3.  Results and visualization will be shown below, the data is about the farm quantities.
+- **Net Income Plot:**
+  1.  Choose "State" and "Farm Type" using slide bars, click on "draw plot" to start.
+  2.  Results are visualization of "Average Net Income" of a chosen state and farm category over recent 10 years.
+- **Net Income Summary Table:**
+  1.  Choose "State" and "Category" using slide bars, click on "draw table" to start.
+  2.  Results are table of "Average Net Income" of a chosen state and category over recent 10 years. Results also show all subcategories of a chosen category.
+  
+## Data
+
+The data is retrieved using API from USDA Economic Research Service (see data retrieve process in "Retrieve_Data_API.R" in the application folder)
+
+The data mainly report net income and farm quantities for particular categories, below are the available categories:
+
+- **Farm Type:**  Residence farms, Intermediate farms, Commercial farms
+- **Farm Economic Class:**  \$1,000,000 or more, \$500,000 to \$999,999, \$250,000 to \$499,999, \$100,000 to \$249,999, less than $100,000
+- **Farm Operator age:** 34 years or younger, 35 to 44 years old, 45 to 54 years old, 55 to 64 years old, 65 years or older
+- **Production Specialty:**   General cash grains, Wheat, Corn, Soybean, Tobacco, cotton, peanuts, Other field crops, Specialty crops (F, V, N), Cattle, Dairy, Hogs, Poultry, All other livestock
+
+## References
+
+USDA Economic Research Service Agricultural Resource Management Survey Data
+[https://www.ers.usda.gov/developer/data-apis/arms-data-api/](https://www.ers.usda.gov/developer/data-apis/arms-data-api/)
+
